@@ -2,10 +2,49 @@
 <!-- Страница с кнопкой -->
 <html lang="ru">
     <head>
+        <title>БЭМ кнопки</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <style>
+            .container {
+                padding: 10px;
+                width: calc(189px * 3 + 60px);
+                height: calc(48px * 2 + 60px);
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .container_button {
+                width: 100%;
+            }
+            .coll {
+                width: 189px;
+            }
+        </style>
     </head>
     <body>
+    <main>
+        <div class='container'>
+            <div class='coll'>
+                <button class='button container_button button_primary' >Primary</button>
+            </div>
+            <div class='coll'>
+                <button class='button container_button button_secondary'>Secondary</button>
+            </div>
+            <div class='coll'>
+                <button class='button container_button button_alternate'>Alternate</button>
+            </div>
+            <div class='coll'>
+                <button class='button container_button button_primary' disabled="disabled">Primary</button>
+            </div>
+            <div class='coll'>
+                <button class='button container_button button_secondary' disabled="disabled">Secondary</button>
+            </div>
+            <div class='coll'>
+                <button class='button container_button button_alternate' disabled="disabled">Alternate</button>
+            </div>
+        </div>
+    </main>
 
     </body>
 </html>
