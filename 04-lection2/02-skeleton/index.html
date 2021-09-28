@@ -2,10 +2,31 @@
 <!-- Страница со скелетоном -->
 <html lang="ru">
     <head>
+        <title>skeleton</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./skeleton.css">
+        <style>
+            .container {
+                width: 579px;
+                height: 192px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class='container'>
+            <div class='skeleton'>
+                <div class='skeleton__title'>
+                    <div class='skeleton__photo'></div>
+                    <div class='skeleton__container'>
+                        <div class='skeleton__row row_small'></div>
+                        <div class='skeleton__row row_middle'></div>
+                    </div>
+                </div>
+                <div class='skeleton__container'>
+                    <div class='skeleton__row row_large'></div>
+                    <div class='skeleton__row row_large'></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
