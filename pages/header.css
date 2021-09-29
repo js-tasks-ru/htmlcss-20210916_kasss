@@ -1,0 +1,12 @@
+.header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.header__title {
+    margin: 0;
+    padding: 40px;
+}

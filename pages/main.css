@@ -1,0 +1,9 @@
+.main {
+    background-color: var(--grey-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    justify-self: stretch;
+    flex-grow: 1;
+}

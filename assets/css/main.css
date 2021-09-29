@@ -1,5 +1,8 @@
 @import '../fonts/fonts.css';
-
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-Regular.ttf") format("ttf");
+}
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -21,4 +24,8 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
 }
