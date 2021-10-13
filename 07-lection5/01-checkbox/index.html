@@ -2,10 +2,45 @@
 <!-- Страница чекбокса -->
 <html lang="ru">
     <head>
+        <title>checkbox</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            .container {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class='container'>
+            <label class='checkbox'>
+                <input class='checkbox__input' type='checkbox'>
+                <div class='checkbox__wrap'>
+                    <div class='checkbox__custom'>
+                        <svg viewBox="0 0 15 15" class='checkbox__icon'>
+                            <use xlink:href="../../assets/images/sprite.svg#checkbox"></use>
+                        </svg>
+                    </div>
+                    <span class='checkbox__label'>Checked</span>
+                </div>
+            </label>
+            <label class='checkbox'>
+                <input class='checkbox__input' type='checkbox' disabled>
+                <div class='checkbox__wrap'>
+                    <div class='checkbox__custom'>
+                        <svg viewBox="0 0 15 15" class='checkbox__icon'>
+                            <use xlink:href="../../assets/images/sprite.svg#checkbox"></use>
+                        </svg>
+                    </div>
+                    <span class='checkbox__label'>Disabled</span>
+                </div>
+            </label>
+    </div>
     </body>
 </html>
