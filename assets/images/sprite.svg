@@ -14,5 +14,8 @@
         <path d="M17 9L9 1L1 9" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="checkbox" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 
 </svg>
