@@ -2,10 +2,42 @@
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
     <head>
+        <title>toggle</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <style>
+            .container {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        </style>
     </head>
     <body>
-
+    <div class='container'>
+        <label class='toggle'>
+            <input class='toggle__input' type='checkbox'>
+            <div class='toggle__wrap'>
+                <div class='toggle__custom'>
+                    <div class='toggle__icon'></div>
+                </div>
+                <span class='toggle__label'>Toggle</span>
+            </div>
+        </label>
+        <label class='toggle'>
+            <input class='toggle__input' type='checkbox' disabled>
+            <div class='toggle__wrap'>
+                <div class='toggle__custom'>
+                    <div class='toggle__icon'></div>
+                </div>
+                <span class='toggle__label'>Disabled</span>
+            </div>
+        </label>
+    </div>
     </body>
 </html>
+
